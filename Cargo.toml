@@ -1,0 +1,7 @@
+[workspace]
+
+members = [
+    "markdown_api",
+    "markdown_web",
+    "markdown_gui",
+]
