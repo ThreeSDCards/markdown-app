@@ -1,5 +1,5 @@
 [workspace]
-
+resolver = "2"
 members = [
     "markdown_api",
     "markdown_web",
