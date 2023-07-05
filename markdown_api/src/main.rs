@@ -8,6 +8,9 @@ fn index() -> &'static str {
 mod endpoints;
 mod model;
 mod database;
+mod cors;
+
+use crate::cors::*;
 
 use endpoints::*;
 #[launch]
@@ -18,4 +21,5 @@ fn rocket() -> _ {
     ep_post_documents,
     ep_put_documents,
     ep_del_documents])
+    .attach(CORS)
 }
